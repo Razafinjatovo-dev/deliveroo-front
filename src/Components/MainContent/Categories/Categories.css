@@ -26,9 +26,19 @@
 
     display:flex;
     flex-wrap: wrap;
-
-
 }
+
+@media all and (max-width:1160px)
+{
+    .mealBoxGroup{
+        display:inline-block;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+
 .mealBox{ /* Selectionne les rectangles fond blanc*/
     /* border: 2px solid pink; */
     display: flex;
@@ -66,4 +76,52 @@
 .mealBox span{
     color:orange;
     font-weight: bold;
+}
+
+@media all and (max-width:1000px)
+{
+    
+    .mealBox{
+        width: 500px;
+        /* display:flex;
+        flex-direction: column-reverse; */
+    }
+    .mealPicture{
+        height: 200px;
+        width: 200px;
+        border-radius: 5px;
+        object-fit: cover;
+        /* border: 10px dashed purple; */
+        /* display: inline-block */
+    }
+
+}
+
+@media all and (max-width:750px)
+{
+  
+
+    .mealBox{
+        width: 400px;
+        font-size: small;
+        padding: 2px;
+    }
+    .mealPicture{
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        object-fit: cover;
+        /* border: 10px dashed purple; */
+        /* display: inline-block */
+    }
+
+}
+
+
+@media all and (max-width:1000px)
+{
+    .mealBoxGroup{
+        width: 100%;
+    }
+    
 }

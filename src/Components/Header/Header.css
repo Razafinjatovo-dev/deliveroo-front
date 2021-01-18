@@ -22,4 +22,48 @@
     border-radius: 10px;
 }
 
+@media all and (max-width:1200px)
+{
+    .Header{
+        /* background-color:yellow; */
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .restoLogo img{
+        /* border: 5px dashed pink; */
+        margin-left: 20px;
+        height: 150px;
+        border-radius: 10px;
+    }
+}
+
+@media all and (max-width:1160px)
+{
+    .Header{
+        /* background-color:orange; */
+        /* Panier en haut en fixe*/
+        
+    }
+
+    .hide{
+        display: none;
+    }
+
+}
+
+@media all and (max-width:750px)
+{ 
+    .Header{
+        padding: 10px;
+    }
+    .Header p{
+        color: grey;
+        font-size: small;
+        text-align: justify;
+    }
+}
+
+
+
+
 

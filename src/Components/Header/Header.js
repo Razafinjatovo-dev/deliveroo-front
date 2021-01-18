@@ -13,7 +13,7 @@ const Header = (props) => {
                 <h1>{restoName}</h1>
                 <p>{description}</p>
             </div>
-            <div className='restoLogo'>
+            <div className='restoLogo hide'>
                 <img src= {picture} alt='resto-logo'/>
             </div>
         </div>

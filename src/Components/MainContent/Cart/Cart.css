@@ -96,3 +96,12 @@ hr{
     display: flex;
     justify-content: space-between;
 }
+
+
+@media all and (max-width:1160px)
+{
+    .CartWrapper{
+        margin-right: 10px;
+    }
+
+}

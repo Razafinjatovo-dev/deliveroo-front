@@ -4,3 +4,29 @@
     display: flex;
     padding-left: 160px;
 }
+
+
+@media all and (max-width:1160px)
+{
+    .MainContent{
+        /* border: 10px solid blue; */
+        /* background-color: green; */
+        box-sizing: border-box;
+        display: flex;
+        /* flex-direction:column-reverse; */
+        padding-left: 10px;
+    }
+    
+}
+
+
+@media all and (max-width:1000px)
+{
+    .MainContent{
+        /* border: 10px solid blue; */
+        flex-direction:column;
+        /* align-items:center; */
+    }
+    
+}
+
