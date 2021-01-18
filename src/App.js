@@ -11,12 +11,7 @@ function App() {
   const [resto, setResto] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
-  // Données-Composition Panier
-  const cartContent = [
-    {id: "151923", title: "Maskita", price: 10, quantity:1},
-    {id: "234567", title: "Vary@anana", price: 10, quantity:1},
-    {id: "153455", title: "Sôsisy", price: 10, quantity:1},
-] 
+ 
   const [Cart, setCart] = useState([]);
 
  
@@ -37,9 +32,7 @@ function App() {
   },[])
   ;
   
-  // console.log(resto.restaurant.description)
-  
-  // console.log(resto.categories[0]);
+ 
     
 
   return isLoading ? (<span>En cours de chargement...</span>) : (

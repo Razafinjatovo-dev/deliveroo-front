@@ -11,39 +11,9 @@ const Categories = (props) => {
         return category.meals.length > 0;
     })
 
-    const dataTest = [
-        {id: "151923", title: "Maskita", price: 10, quantity:1},
-        {id: "234567", title: "Vary@anana", price: 10, quantity:1},
-        {id: "153455", title: "Sôsisy", price: 10, quantity:1},
-    ] 
+   
 
-    // Click to Add Item 
-
-    // const addItem = () => {
-
-        
-    //     Recquis: Attention à transférer les useState depuis App js vers ce composant
-
-    //     copie Cart actuel pour pouvoir push un élement par la suite
-    //     let newCart =[...carData] ;
-
-    //     Recherche des données de l'item cliqué dans la base 'resto' dans App.js
-    //     let newItem;
-    //     restoData.categories.foreach( x => {
-    //         newItem = {
-    //             title: "test",
-    //             price: 20,
-    //         }
-    //     })
-        
-    //     push du new item dans la copie de Cart
-    //     newCart.push()
-
-    //     màj state via setCart 
-
-    //     console.log(cartData);
-        
-    // }
+  
     
     return (
         <div className="CategoriesWrapper">
