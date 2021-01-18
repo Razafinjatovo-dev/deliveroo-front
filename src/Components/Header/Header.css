@@ -1,0 +1,25 @@
+
+.Header{
+    /* border: 2px solid black; */
+    border-top: 2px solid lightgrey;
+    display: flex;
+    padding: 30px 160px 30px 160px;
+    background-color: #fff;
+}
+.Header h1{
+    font-size: xx-large;
+}
+.Header p{
+    color: grey;
+    font-size: x-large;
+    text-align: justify;
+}
+
+.restoLogo img{
+    /* border: 5px dashed pink; */
+    margin-left: 20px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+

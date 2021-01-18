@@ -1,0 +1,98 @@
+.CartWrapper{
+    /* border: 10px dashed purple; */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    background-color: white;
+    min-width: 370px;
+    margin-right: 150px;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 20px 20px grey;
+    /* position: relative; */
+    /* margin-left: 40px; */
+    /* margin-right: 160px; */
+}
+
+
+.Cart{
+    /* border: 1px solid black; */
+    width:350px;
+    color: grey;
+}
+
+.itemWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bouton-quantité-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+
+.validCart{
+    height: 50px;
+    width: 330px;
+    background-color: #29CCBC;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius:5px;
+    border: none;
+}
+
+.bouton-plus-moins{
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #29CCBC;
+    color:  #29CCBC;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right:5px;
+}
+
+.itemQuantity{
+    margin-right: 5px;
+}
+
+hr{
+    border: 1px solid gainsboro;
+}
+
+.itemName{
+    /* border:2px solid brown; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.delivery-fees{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.subTotal{
+    display: flex;
+    justify-content: space-between;
+}
