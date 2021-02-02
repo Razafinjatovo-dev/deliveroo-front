@@ -1,6 +1,6 @@
 import React from "react";
-import "./Categories.css";
 import nopicture from "../../../Assets/no-picture.png";
+import "./Categories.css";
 
 const Categories = (props) => {
   const { restoData, cartData, setCart } = props;

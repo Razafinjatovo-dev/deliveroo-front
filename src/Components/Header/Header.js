@@ -6,7 +6,7 @@ const Header = (props) => {
 
   return (
     <div className="Header">
-      <div className="HeaderInside"> 
+      <div className="HeaderInside">
         <div>
           <h1>{restoName}</h1>
           <p>{description}</p>

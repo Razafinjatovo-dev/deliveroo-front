@@ -1,26 +1,23 @@
 .CategoriesWrapper {
   /* border: 10px solid red; */
   box-sizing: border-box;
-  width:80%
+  width: 80%;
 }
 
 .category {
   /* border: 10px solid green; */
   box-sizing: border-box;
-  /*Gros Rectangle vers regroupant iles rect blancs*/
   display: flex;
   flex-direction: column;
-  /* width: 50%; */
   margin-bottom: 20px;
 }
 
 .mealPicture {
+  /* border: 10px dashed purple; */
   height: 200px;
   width: 200px;
   border-radius: 5px;
   object-fit: cover;
-  /* border: 10px dashed purple; */
-  /* display: inline-block */
 }
 
 .mealBoxGroup {
@@ -43,7 +40,6 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .CategoriesWrapper {
-    /* border: 10px solid red; */
     width: 100%;
   }
 
@@ -71,12 +67,11 @@
     margin-bottom: 10px;
   }
   .mealPicture {
+    /* border: 10px dashed purple; */
     height: 100px;
     width: 100px;
     border-radius: 5px;
     object-fit: cover;
-    /* border: 10px dashed purple; */
-    /* display: inline-block */
   }
 }
 
@@ -86,7 +81,6 @@
     background-color: #e9ecef;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
     align-items: flex-start;
   }
   .mealBoxGroup {
@@ -110,23 +104,20 @@
     margin-bottom: 10px;
   }
   .mealPicture {
+    /* border: 10px dashed purple; */
     height: 150px;
     width: 150px;
     border-radius: 5px;
     object-fit: cover;
     margin-right: 10px;
-    /* border: 10px dashed purple; */
-    /* display: inline-block */
   }
 }
-
-
 
 /* Large devices (laptops/desktops, 992px to 1722px) */
 @media only screen and (min-width: 992px) and (max-width: 1722px) {
   CategoriesWrapper {
     box-sizing: border-box;
-    width:50%;
+    width: 50%;
   }
   .mealBoxGroup {
     /* background-color: brown; */
@@ -135,7 +126,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0px;
-    width:100%;
+    width: 100%;
   }
   .mealBox {
     /* background-color: pink; */
@@ -149,17 +140,15 @@
     margin-bottom: 5px;
     width: 40%;
     font-size: 1.2em;
-    margin-right:10px;
+    margin-right: 10px;
   }
   .mealPicture {
     height: 100px;
     width: 100px;
     border-radius: 5px;
     object-fit: cover;
-    
   }
 }
-
 
 /* Large devices (laptops/desktops, 1722px and up) */
 @media only screen and (min-width: 1722px) {
