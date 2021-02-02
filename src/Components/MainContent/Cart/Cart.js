@@ -4,7 +4,7 @@ import "./Cart.css";
 const Cart = (props) => {
   const { cartData, setCart } = props;
 
-  // Sous-Total calcul 
+  // Sous-Total calcul
   let subTotal = 0;
   cartData.forEach((CartItem) => {
     subTotal += CartItem.quantity * CartItem.price;
@@ -15,8 +15,6 @@ const Cart = (props) => {
 
   // Total calcul
   let total = subTotal + deliveryFees;
-
-  const Addquantity = 'test';
 
   return (
     <div className="CartWrapper">
