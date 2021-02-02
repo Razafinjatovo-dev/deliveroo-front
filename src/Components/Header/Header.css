@@ -1,69 +1,100 @@
+.Header {
+  /* border: 2px solid black; */
+  border-top: 2px solid lightgrey;
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
 
-.Header{
-    /* border: 2px solid black; */
-    border-top: 2px solid lightgrey;
+.HeaderInside {
+  /* background-color: salmon; */
+  box-sizing: border-box;
+  max-width: 2000px;
+  margin: auto;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  display: flex;
+}
+.Header h1 {
+  font-size: xx-large;
+}
+.Header p {
+  color: grey;
+  font-size: x-large;
+  text-align: justify;
+}
+
+.restoLogo img {
+  /* border: 5px dashed pink; */
+  margin-left: 20px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .HeaderInside {
     display: flex;
-    padding: 30px 160px 30px 160px;
-    background-color: #fff;
-}
-.Header h1{
-    font-size: xx-large;
-}
-.Header p{
+    flex-direction: column-reverse;
+  }
+  .Header h1 {
+    font-size: medium;
+  }
+  .Header p {
     color: grey;
-    font-size: x-large;
+    font-size: small;
     text-align: justify;
+  }
+  .restoLogo img {
+    width: 100%;
+    margin-left: 0px;
+    border-radius: 0px;
+  }
 }
 
-.restoLogo img{
+/* Large smartphones and tablets */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .HeaderInside {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 10px;
+  }
+  .restoLogo img {
     /* border: 5px dashed pink; */
     margin-left: 20px;
-    height: 200px;
+    height: 150px;
     border-radius: 10px;
+    margin-left: 0px;
+  }
 }
 
-@media all and (max-width:1200px)
-{
-    .Header{
-        /* background-color:yellow; */
-        display: flex;
-        flex-direction:column-reverse;
-    }
-    .restoLogo img{
-        /* border: 5px dashed pink; */
-        margin-left: 20px;
-        height: 150px;
-        border-radius: 10px;
-    }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .HeaderInside {
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+  }
+  .restoLogo img {
+    /* border: 5px dashed pink; */
+    height: 150px;
+    border-radius: 5px;
+  }
 }
 
-@media all and (max-width:1160px)
-{
-    .Header{
-        /* background-color:orange; */
-        /* Panier en haut en fixe*/
-        
-    }
-
-    .hide{
-        display: none;
-    }
-
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Header {
+   background-color:  #29ccbc;
+  }
+  .HeaderInside {
+    background-color: #29ccbc;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+  }
+  .restoLogo img {
+    /* border: 5px dashed pink; */
+    margin-left: 20px;
+    min-height: 270px;
+    border-radius: 10px;
+  }
 }
-
-@media all and (max-width:750px)
-{ 
-    .Header{
-        padding: 10px;
-    }
-    .Header p{
-        color: grey;
-        font-size: small;
-        text-align: justify;
-    }
-}
-
-
-
-
-

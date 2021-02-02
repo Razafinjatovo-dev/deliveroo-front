@@ -1,12 +1,54 @@
-.Topheader{
+.Topheader {
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.TopheaderInside {
+  box-sizing: border-box;
+  border: 2px white dashed;
+  max-width: 2000px;
+  margin: auto;
+  /* padding-left: 20px; */
+}
+
+.Topheader img {
+  height: 100px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .TopheaderInside {
+    display: flex;
+    justify-content: center;
+  }
+  .Topheader img {
+    height: 50px;
+  }
+}
+
+/* Large smartphones and tablets */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .TopheaderInside {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .TopheaderInside {
+    padding-left: 10px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Topheader {
+    box-sizing: border-box;
     background-color: #fff;
-    padding-left: 160px;
+    /* padding-left: 160px; */
+  }
+  .TopheaderInside {
+    padding-left: 20px;
+  }
 }
-
-.Topheader img{
-    height: 100px;
-}
-
-
-
-

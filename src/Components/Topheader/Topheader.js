@@ -1,15 +1,16 @@
-import React from 'react';
-import './Topheader.css';
+import React from "react";
+import "./Topheader.css";
 
-import Logo from '../../Assets/Deliveroo-logo.png';
+import Logo from "../../Assets/Deliveroo-logo.png";
 
 const Topheader = () => {
-    return (
-        <div className='Topheader'>
-            <img src={Logo} alt="Logo"/> 
-        </div>
-
-    )
-}
+  return (
+    <div className="Topheader">
+      <div className="TopheaderInside">
+        <img src={Logo} alt="Logo" />
+      </div>
+    </div>
+  );
+};
 
 export default Topheader;

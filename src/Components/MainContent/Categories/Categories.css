@@ -1,127 +1,157 @@
-.CategoriesWrapper{
+.CategoriesWrapper {
+  /* border: 10px solid red; */
+  box-sizing: border-box;
+}
+
+.category {
+  /* border: 10px solid green; */
+  box-sizing: border-box;
+  /*Gros Rectangle vers regroupant iles rect blancs*/
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  margin-bottom: 20px;
+}
+
+.mealPicture {
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  /* border: 10px dashed purple; */
+  /* display: inline-block */
+}
+
+.mealBoxGroup {
+  /* background-color: brown; */
+  /* border: dashed 10px black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mealBox {
+  /* background-color: pink; */
+  display: flex;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: flex-start;
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .CategoriesWrapper {
     /* border: 10px solid red; */
-    box-sizing: border-box;
-    width: 1710px;
-    /* Décale l'intérieur du wrapper en rouge des catégories vers la droite pour aligner avec le logo deliveroo 
-    A Passer en 160 px au lieu de 130px une fois les border épaisses retirées*/
-    /* padding-left:130px;  */
-    
-}
+    width: 100%;
+  }
 
-.category{  /*Gros Rectangle vers regroupant iles rect blancs*/
-    /* border: 10px solid green; */
-    /* width: 1400px; */
-}
-
-.mealPicture{
-    height: 200px;
-    width: 200px;
+  .categoryTitle {
+    font-size: large;
+    text-align: center;
+  }
+  .mealBoxGroup {
+    /* background-color: brown; */
+    /* border: dashed 10px black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .mealBox {
+    /* background-color: pink; */
+    background-color:white;
+    /* display: flex; */
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 0px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .mealPicture {
+    height: 100px;
+    width: 100px;
     border-radius: 5px;
     object-fit: cover;
     /* border: 10px dashed purple; */
     /* display: inline-block */
+  }
 }
 
-.mealBoxGroup{
-
-    display:flex;
-    flex-wrap: wrap;
-}
-
-@media all and (max-width:1160px)
-{
-    .mealBoxGroup{
-        display:inline-block;
-        flex-wrap: wrap;
-    }
-    
-}
-
-
-
-.mealBox{ /* Selectionne les rectangles fond blanc*/
-    /* border: 2px solid pink; */
-    display: flex;
-    margin-bottom: 10px;
-    margin-right: 30px;
-    padding: 20px;
-    border-radius: 10px;
-    width: 550px;
-    justify-content: space-between;
-    background-color: #fff;
-
-
-}
-
-.mealBox div{
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .CategoriesWrapper {
+    /* border: 10px solid red; */
+    padding: 10px;
+    background-color: #e9ecef;
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
-
+    /* justify-content: flex-end; */
+    align-items: flex-start;
+  }
+  .mealBoxGroup {
+    /* background-color: brown; */
+    /* border: dashed 10px black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px;
+  }
+  .mealBox {
+    /* background-color: pink; */
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .mealPicture {
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 10px;
+    /* border: 10px dashed purple; */
+    /* display: inline-block */
+  }
 }
 
-.mealBox p{
-    color: grey;
-}
-
-
-.description{
-    text-align: justify;
-    /* color:pink;
-    background-color: pink; */
-}
-
-
-
-.mealBox span{
-    color:orange;
-    font-weight: bold;
-}
-
-@media all and (max-width:1000px)
-{
-    
-    .mealBox{
-        width: 500px;
-        /* display:flex;
-        flex-direction: column-reverse; */
-    }
-    .mealPicture{
-        height: 200px;
-        width: 200px;
-        border-radius: 5px;
-        object-fit: cover;
-        /* border: 10px dashed purple; */
-        /* display: inline-block */
-    }
-
-}
-
-@media all and (max-width:750px)
-{
-  
-
-    .mealBox{
-        width: 400px;
-        font-size: small;
-        padding: 2px;
-    }
-    .mealPicture{
-        height: 100px;
-        width: 100px;
-        border-radius: 5px;
-        object-fit: cover;
-        /* border: 10px dashed purple; */
-        /* display: inline-block */
-    }
-
-}
-
-
-@media all and (max-width:1000px)
-{
-    .mealBoxGroup{
-        width: 100%;
-    }
-    
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .CategoriesWrapper {
+    /* border: 10px solid red; */
+    box-sizing: border-box;
+    width: 75%;
+  }
+  .mealBoxGroup {
+    /* background-color: brown; */
+    /* border: dashed 10px black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0px;
+  }
+  .mealBox {
+    /* background-color: pink; */
+    background-color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 47%;
+    font-size:1.2em
+  }
+  .mealPicture {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
 }
