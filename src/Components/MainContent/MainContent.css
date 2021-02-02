@@ -48,10 +48,24 @@
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1722px) {
   .MainContentInside {
     /* border: 10px solid yellow; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1722px) {
+  .MainContentInside {
+    /* border: 2px dashed black; */
+    width: 80%;
     padding-left: 20px;
+    padding-right: 20px;
   }
 }

@@ -4,8 +4,8 @@
 }
 
 .TopheaderInside {
+  /* border: 2px black dashed; */
   box-sizing: border-box;
-  border: 2px white dashed;
   max-width: 2000px;
   margin: auto;
   /* padding-left: 20px; */
@@ -38,6 +38,7 @@
 @media only screen and (min-width: 992px) {
   .TopheaderInside {
     padding-left: 10px;
+    width: 80%;
   }
 }
 
@@ -49,6 +50,6 @@
     /* padding-left: 160px; */
   }
   .TopheaderInside {
-    padding-left: 20px;
+    width: 80%;
   }
 }
