@@ -4,22 +4,19 @@ import { useState, useEffect } from "react";
 import Topheader from "./Components/Topheader/Topheader";
 import Header from "./Components/Header/Header";
 import MainContent from "./Components/MainContent/MainContent";
+import LoaderSpinner from "./Components/Loader/LoaderSpinner";
 
 function App() {
   const [resto, setResto] = useState();
   const [isLoading, setIsLoading] = useState(true);
-
   const [Cart, setCart] = useState([]);
-
   const fetchData = async () => {
-    console.log("Fetching Data");
     try {
       const response = await axios.get(
         "https://delivroom-backend.herokuapp.com/"
       );
       setResto(response.data);
       setIsLoading(false);
-      console.log("data fetched");
     } catch (e) {
       console.error("An error occured");
     }
@@ -30,7 +27,7 @@ function App() {
   }, []);
 
   return isLoading ? (
-    <span>En cours de chargement...</span>
+    <LoaderSpinner/>
   ) : (
     <div className="App">
       <Topheader />

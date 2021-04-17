@@ -1,5 +1,4 @@
 .Header {
-  /* border: 2px solid black; */
   background-color: #29ccbc;
   border-top: 2px solid lightgrey;
   display: flex;
@@ -8,7 +7,6 @@
 }
 
 .HeaderInside {
-  /* background-color: salmon; */
   background-color: #29ccbc;
   box-sizing: border-box;
   max-width: 2000px;
@@ -27,7 +25,6 @@
 }
 
 .restoLogo img {
-  /* border: 5px dashed pink; */
   margin-left: 20px;
   height: 200px;
   border-radius: 10px;
